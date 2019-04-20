@@ -1,0 +1,41 @@
+<% include _header %>
+
+<link rel="stylesheet" href="/styles/portal.css">
+  
+	<div class="page-title">
+		<h1>Welocme to EHRSS2.0 User Portal</h1>
+		<div class="your-class">
+				<div><img src="/images/slide1.jpg" style="display:block;margin: 0 auto;"/></div>
+			</div>
+			<div id="popupBoxOnePosition">
+					<div class="popupBoxWrapper">
+						<div class="popupBoxContent">
+							<div class="modalImg">
+								<img src="/images/icon.png" width="150px"></img>
+							</div>
+							<div class="modalPersonalInfo">
+								<div id="result"></div>
+								<a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">Edit</a>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$('.your-class').slick({});
+		});
+		function toggle_visibility(id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display = 'none';
+			}else{
+				e.style.display = 'block';
+			} 
+		}
+	</script>
+	
+
+<% include _footer %>

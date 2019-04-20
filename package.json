@@ -1,0 +1,37 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "description": "ehrss portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Lilian1331/ehrss.git"
+  },
+  "keywords": [
+    "ehrss"
+  ],
+  "author": "kitty kwok man tung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Lilian1331/ehrss/issues"
+  },
+  "homepage": "https://gitlab.com/Lilian1331/ehrss#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jquery": "^3.3.1",
+    "jsdom": "^14.0.0",
+    "material-icons": "^0.3.1",
+    "path": "^0.12.7",
+    "session-file-store": "^1.2.0",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {}
+}

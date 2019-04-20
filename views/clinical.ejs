@@ -1,0 +1,83 @@
+<% include _header %>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "http://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js" defer></script>
+ 
+
+<style type="text/css">
+th{
+	font-size: 10px;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 5px 18px;
+    border-bottom: 1px solid #111;
+}
+table.dataTable.display tbody tr td {
+    border-top: none;
+    font-size: 10px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 2px 2px;
+}
+label{
+	display: none;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+	padding-top: 0.25em;
+	display: none;	
+}
+.dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+	padding-top: 0.755em;
+	display: none;		
+}
+</style>
+	<div class="content">
+		<div class="page-title">
+			<h1>Clinical Record</h1>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-sm-4">
+				<div class="form-structor">
+					<div class="form-content">
+						<div class="form-group">
+							<label for="patientId">Patient HKId:</label>
+							<input type="text" name="patientId" id="patientId" class="form-control" placeholder="Please input patient HKID e.g.A123">
+						</div>
+						<div class="form-group">
+							<label for="patientName">Patient Name</label>
+							<input type="text" name="patientName" id="patientName" class="form-control" oninput="this.value = this.value.toUpperCase()" placeholder="Please enter patient Name e.g. KWOK MAN TUNG">
+						</div>
+						<div class="form-group float-right">
+							<button class="btn btn-primary float-right" id="search">Search</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<div class="form-group col-sm-8">
+				<table id="table_id" class="display" style="width:100%;" border="1px" >
+						
+				</table>
+					
+						
+		</div>
+	</div>
+		
+	</div>	
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$('#table_id').DataTable();
+		} );
+		
+	</script>
+	
+
+<% include _footer %>

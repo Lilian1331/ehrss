@@ -1,0 +1,10 @@
+.modalImg{
+	display: inline-block;
+}
+
+.modalPersonalInfo{
+	padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+	display: inline-block;
+}

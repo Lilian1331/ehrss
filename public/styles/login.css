@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+html,body {
+	position: relative;
+	min-height: 100vh;
+	background-color: #E1E8EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-structor {
+	background-color: #ffff;
+	border-radius: 15px;
+	height: 550px;
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+}
+
+.form-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-title{
+	text-align: center;
+	padding: 20px;
+	padding-top: 30px;
+}
+
+
+
+
+
+

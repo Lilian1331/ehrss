@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EHRSS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/styles/header.css">
+</head>
+
+<script type="text/javascript">
+	function toggle_visibility(id){
+		var e = document.getElementById(id);
+		if(e.style.display == 'block'){
+			e.style.display = 'none';
+		}else{
+			e.style.display = 'block';
+		} 
+	}
+</script>
+<style type="text/css">
+	#popupBoxOnePosition{
+		top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+		background-color: rgba(0,0,0,0.7); display: none;
+	}
+	.popupBoxWrapper{
+		z-index: 1000;
+		width: 550px; margin: 50px auto; text-align: left;
+	}
+	.popupBoxContent{
+		z-index: 1000;
+		background-color: #FFF; 
+		padding: 30px;
+    	border-radius: 15px;
+	}
+</style>
+
+
+<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="/"><img src="/images/ehrss_banner.jpg" class="banner-header"/></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+			  
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="clinical">Clinical</a>
+						</li>
+						<li class="nav-item active">
+								<a class="nav-link" href="#">Standards</a>
+						</li>
+						<li class="nav-item active">
+								<a class="nav-link" href="#">Information</a>
+						</li>
+				  </ul>
+				 
+				  <div class="form-inline my-2 my-lg-0">
+					  <ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+									<a class="nav-link personalInfo" id="personalInfo" onclick="toggle_visibility('popupBoxOnePosition');" ><%= userDisplayName ? userDisplayName : 'N/A' %></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#"> (Logout) </a>
+							</li>
+					  </ul>
+				  </div>
+				</div>
+		</nav>
+	
+	<div class="container">
+		
