@@ -19,6 +19,10 @@ router.get('/clinical',function(req,res){
 	res.render("clinical",{userDisplayName:req.session.loginUser});
 });
 
+router.post('/sharepoint',function(req,res){
+	console.log("OMG! I got you babe.");
+	res.json({msg:"Yeah"});
+})
 
 
 
