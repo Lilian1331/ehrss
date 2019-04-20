@@ -21,7 +21,7 @@ router.get('/clinical',function(req,res){
 
 router.post('/sharepoint',function(req,res){
 	console.log("OMG! I got you babe.");
-	res.json({msg:"Yeah"});
+	res.json({msg:"Yeah! i got the post request"});
 })
 
 
