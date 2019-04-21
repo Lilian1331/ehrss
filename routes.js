@@ -19,8 +19,11 @@ router.get('/clinical',function(req,res){
 	res.render("clinical",{userDisplayName:req.session.loginUser});
 });
 
-router.post('/sharepoint',function(req,res){
-	console.log("OMG! I got you babe.");
+router.get('/sharepoint',function(req,res){
+	console.log("Received request from sharepoint user.");
+	console.log("Verify user " + req.query.requester);
+	console.log(req.query.requester + " verified");
+	console.log("Fetching " + req.query.patientId + " patient record from ledger.......");
 	res.json({msg:"Yeah! i got the post request"});
 })
 
